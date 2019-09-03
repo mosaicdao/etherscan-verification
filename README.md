@@ -50,7 +50,12 @@ With truffle compile below fields are already populated in JSON file. Make sure 
 ```
 address: deployed contract address.
 transactionHash: Transaction hash when the contract was deployed.
-links: Library contract addresses. 
+links: Library contract addresses.
+
+- Set --optimize-runs if the contract was optimized for during compilation.
+```
+npx verify-on-etherscan --network goerli chains/goerli/1405/AnchorOrganization.json --optimize-runs 200
+```
 
 ### Verify contract
 
