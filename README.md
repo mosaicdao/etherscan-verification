@@ -61,3 +61,5 @@ Example
 ```
 npx verify-on-etherscan --network goerli ./build/contracts/eip20Token.json
 ```
+
+Checkout [more options](https://github.com/gnosis/verify-on-etherscan#as-a-cli-utility).
