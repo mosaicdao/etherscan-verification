@@ -1,2 +1,2 @@
 # etherscan-verification
-Verify contracts on etherscan
+Verify contracts on Etherscan
