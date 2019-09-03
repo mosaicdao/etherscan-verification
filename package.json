@@ -16,7 +16,7 @@
     "url": "https://github.com/mosaicdao/etherscan-verification"
   },
   "devDependencies": {
-    "verify-on-etherscan": "^1.2.1",
+    "verify-on-etherscan": "1.2.1",
     "truffle": "5.0.19"
   },
   "scripts": {},
