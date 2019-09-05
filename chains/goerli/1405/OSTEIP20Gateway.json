@@ -6,14 +6,13 @@
       "transactionHash": "0xc98eb41dfc3ac079095e5d0c18237c42c58c39cc5dbe931d1d635931f01bade2",
       "links": {
         "GatewayLib" : "0x37e0439479df9d473Ee1b4d214550D8e09ff2b42",
-        "MessageBus" : "0x748a71D9EE4b5a791d9E34E62d7c2480a0B7B651",
-        "MerklePatriciaLib" : "0x3BEbbFFe05c11FbEbB7AC044C9a5dE85462B784B"
+        "MessageBus" : "0x748a71D9EE4b5a791d9E34E62d7c2480a0B7B651"
       }
     }
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a"
+    "version": "0.5.3+commit.10d17f24"
   },
   "sourcePath": "./mosaic-contracts/contracts/gateway/EIP20Gateway.sol",
   "abi": [

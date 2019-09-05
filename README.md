@@ -3,7 +3,7 @@
 ### Set etherscan API Key
 
 ```
-export API_KEY=<etherscan_api_key
+export API_KEY=<etherscan_api_key>
 ```
 
 ### Install node modules
@@ -29,7 +29,7 @@ With truffle compile below fields are already populated in JSON file. Make sure 
 ```
 "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.0+commit.1d4f565a"
   },
 ```
 
@@ -49,7 +49,9 @@ With truffle compile below fields are already populated in JSON file. Make sure 
     }
 ```
 address: deployed contract address.
+
 transactionHash: Transaction hash when the contract was deployed.
+
 links: Library contract addresses.
 
 - Set --optimize-runs if the contract was optimized for during compilation.
@@ -60,11 +62,11 @@ npx verify-on-etherscan --network goerli chains/goerli/1405/AnchorOrganization.j
 ### Verify contract
 
 ```
-npx verify-on-etherscan --network goerli <contract build path>
+npx verify-on-etherscan --network goerli <contract build path> --optimize-runs 200 --output 200
 ```
 Example
 ```
-npx verify-on-etherscan --network goerli ./build/contracts/eip20Token.json
+npx verify-on-etherscan --network goerli ./build/contracts/eip20Token.json --optimize-runs 200 --output 200
 ```
 
 Checkout [more options](https://github.com/gnosis/verify-on-etherscan#as-a-cli-utility).

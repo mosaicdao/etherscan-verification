@@ -2,16 +2,16 @@
   "contractName": "Organization",
   "networks": {
     "5": {
-      "address": "0x18F5aF462C093007a9e3Ed2CF69d04F318C63bdc",
+      "address": "0x18F5aF462C093007a9e3Ed2CF69d04F318C63BDC",
       "transactionHash": "0xa36fb52b2fa7320981309f1ee56b5d4e561d74b54a43fe209887f04caae67d54",
       "links": {}
     }
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a"
+    "version": "0.5.3+commit.10d17f24"
   },
-  "sourcePath": "./mosaic-contracts/contracts/utilitytoken/contracts/organization/contracts/Organization.sol",
+  "sourcePath": "./mosaic-contracts/contracts/lib/Organization.sol",
   "abi": [
     {
       "constant": true,
