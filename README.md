@@ -14,18 +14,16 @@ npm install
 
 ### Build your contract
 
-You can build your contract with truffle command
+You can build your contract with truffle command if not done already.
 ```
 truffle compile
 ```
 
 Build output file will be <contract>.json
 
-### Set variables in build file
-
-With truffle compile below fields are already populated in JSON file. Make sure they are updated if not present.
+### Update variables in build file
  
-- Add compiler information section like below:
+- Add/Update compiler information section like below:
 ```
 "compiler": {
     "name": "solc",
@@ -39,7 +37,7 @@ With truffle compile below fields are already populated in JSON file. Make sure 
     "sourcePath": "./mosaic-contracts/contracts/gateway/OSTComposer.sol",
   ```
 
-- Update build file with network section.
+- Add/Update build file with network section.
 ```
 "networks": {
     "3": {
@@ -48,21 +46,20 @@ With truffle compile below fields are already populated in JSON file. Make sure 
       "links": {}
     }
 ```
-address: deployed contract address.
-
-transactionHash: Transaction hash when the contract was deployed.
-
-links: Library contract addresses.
-
-- Set --optimize-runs if the contract was optimized for during compilation.
-```
-npx verify-on-etherscan --network goerli chains/goerli/1405/AnchorOrganization.json --optimize-runs 200
-```
+    - address: deployed contract address.
+    - transactionHash: Transaction hash when the contract was deployed.
+    - links: Library contract addresses.
+      Example: {
+        "MerklePatriciaProof": "0x168803ca6d5d466ea7005627bfd6eaf0b5b164b0",
+        "MessageBus": "0x9c50ad270a2ca1d897326b0880b3f639c3b0acef"
+      }
+      
+    - For verification of library linked contracts, make sure library contract addresses are verified     
 
 ### Verify contract
 
 ```
-npx verify-on-etherscan --network goerli <contract build path> --optimize-runs 200 --output 200
+npx verify-on-etherscan --network goerli <contract build path> --optimize-runs 200 --output <flattenedFilePath>
 ```
 Example
 ```
