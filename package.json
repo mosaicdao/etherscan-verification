@@ -1,0 +1,25 @@
+{
+  "name": "@openst/etherscan-verification",
+  "version": "0.0.1",
+  "description": "Verification of contracts on Etherscan",
+  "keywords": [
+    "Mosaic",
+    "OST",
+    "Etherscan",
+    "web3",
+    "Ethereum",
+    "EIP20"
+  ],
+  "homepage": "https://openst.org/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mosaicdao/etherscan-verification"
+  },
+  "devDependencies": {
+    "verify-on-etherscan": "1.2.1",
+    "truffle": "5.0.19"
+  },
+  "scripts": {},
+  "author": "OpenST Foundation Ltd.",
+  "license": "Apache-2.0"
+}
